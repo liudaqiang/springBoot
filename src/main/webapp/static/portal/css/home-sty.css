@@ -1,0 +1,494 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    background: none;
+    border: none;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-family: '微软雅黑';
+}
+ul li{
+    list-style: none;
+}
+ol li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #445;
+}
+a:hover{
+    text-decoration: none;
+}
+.clear:after{
+    content: '';
+    visibility: hidden;
+    height: 0;
+    display: block;
+    clear: both;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+.head-bg{
+    width: 100%;
+    position: relative;
+}
+.head-bg .head-logo,.remind,.user{
+    position: absolute;
+    bottom: 20px;
+}
+.head-bg .head-logo{
+    left: 15px;
+    color: white;
+    cursor: pointer;
+    line-height: 30px;
+    font-size: 20px;
+}
+.head-logo img{
+    width: 28px;
+    margin: 0 8px;
+}
+
+.head-logo{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/*-- 禁止文本选中 --*/
+
+
+.head-bg .remind{
+    right: 175px;
+}
+.head-bg .user{
+    bottom: 16px;
+    right: 120px;
+    cursor: pointer;
+}
+.head-bg .userName{
+    color: white;
+    position: absolute;
+    right: -100px;
+    width: 90px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    bottom: -3px;
+    font-size: 12px;
+}
+.user .user-core{
+    width: 30px;
+    height: 30px;
+    border-radius: 500px;
+    background: #c5bec9;
+    cursor: pointer;
+    background: url("../images/user.jpg") no-repeat center;
+    background-size: 120%;
+    position: relative;
+}
+.personal-set{
+    font-size: 14px;
+    background: white;
+    text-align: center;
+    position: absolute;
+    top: 45px;
+    right: -30px;
+    z-index: 999;
+    border-radius: 4px;
+    box-shadow: #bbbbbb -3px 3px 5px;
+    display: none;
+}
+.personal-set>p{
+    line-height: 30px;
+    transition: all .2s;
+}
+.personal-set>.font-icon{
+    position: absolute;
+    width: 18px;
+    top: -18px;
+}
+.personal-set>p:hover{
+    color: white;
+    background: #4883f6;
+    transition: all .2s;
+}
+.font-icon{
+    width: 18px;
+    position: absolute;
+    top: -18px;
+}
+
+    /*------  头部样式 -------*/
+
+
+
+
+.nav{
+    width: 15.5%;
+    height: inherit;
+    float: left;
+    box-shadow: #bbbbbb 2px 0 5px;
+}
+.nav li{
+    text-align: center;
+    line-height: 40px;
+}
+.navarr .hot-map{
+    cursor: pointer;
+    margin: 18px 0 0 8px;
+    width: 18px;
+}
+
+.navarr>.parent-item{
+    display: block;
+    border-bottom: 1px #ccc solid;
+    font-size: 18px;
+    line-height: 50px;
+}
+.subnavarr:hover{
+    background: #4883f6;
+    transition: all .2s;
+}
+.subnavarr:hover a{
+    color: white;
+}
+.subnavarr a,
+.subnavarr a{
+    transition: all .3s;
+    font-size: 16px;
+}
+.subnavarr a img{
+    margin: 10px 10px 0 -18px;
+}
+.subnavarr a.active{
+    color: white;
+    background: #4883f6;
+    display: block;
+    line-height: 40px;
+    transition: all .3s;
+}
+
+/*---------  菜单栏样式 ---------*/
+
+
+
+.item-contt{
+    width: 84.5%;
+    float: right;
+}
+.item-conttarr{
+    width: 100%;
+}
+/*.item-conttarr .home-item-cont{
+    height: 300px;
+    padding:30px 20px;
+    background: #3bbed0;
+}
+.item-conttarr .jindu-item-cont{
+    height: 300px;
+    padding:30px 20px;
+    background: #2383d0;
+}
+.item-conttarr .text-item-cont{
+    height: 300px;
+    padding:30px 20px;
+    background: #a136d0;
+}
+.item-conttarr .team-item-cont{
+    height: 300px;
+    padding:30px 20px;
+    background: #d02d4d;
+}*/
+
+/*------------  项目内容区  ----------*/
+.model-poll{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(109, 109, 110, 0.3);
+    z-index: 9;
+    display: none;
+}
+
+
+
+
+.login-titl{
+    color: white;
+    line-height: 50px;
+    background: #4883f6;
+    position: relative;
+}
+.login-titl .close-ico{
+    width: 14px;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+}
+
+/*.login .login-num,.login-pasw{
+    display: block;
+    padding: 20px 0 10px;
+    color: #333333;
+    font-size: 14px;
+    line-height: 36px;
+}*/
+/*.login .account,.passwor{
+    width: 65%;
+    padding: 7px 5px;
+    border: 1px solid #777777;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all .3s;
+}
+.about-pas{
+    padding: 5px 0 20px;
+}
+.about-pas .remember-pas,.chang-pas{
+    font-size: 12px;
+    line-height: 24px;
+}
+.about-pas input[type='checkbox']{
+    margin: 5px;
+}
+.about-pas .remember-pas{
+    margin-right: 10px;
+    color: #999999;
+}
+.about-pas .chang-pas a{
+    color: #4883f6;
+}
+.login .confirm-login,.cancel-login{
+    width: 70px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 4px;
+    box-shadow: #bbbbbb 0 0 5px;
+}
+.login .confirm-login{
+    color: white;
+    background: #4883f6;
+    margin-right: 5px;
+}
+.login .cancel-login{
+    border: 1px #eeeeee solid;
+    margin-left: 5px;
+}*/
+.personal-set{
+    width: 120px;
+    text-align: center;
+    position: absolute;
+}
+/*------------  登录面板  ---------*/
+
+.chang-poll{
+    display: none;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: #999999 5px 5px 15px;
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+    position: fixed;
+    top: 30%;
+    left: 26%;
+    z-index: 99;
+    padding-bottom: 20px;
+}
+
+
+
+.chang-poll .old-pasw,.new-pasw{
+    display: block;
+    padding: 20px 0 10px;
+    color: #333333;
+    font-size: 14px;
+    line-height: 36px;
+}
+
+.chang-poll .old-pasw-inp,.new-pasw-inp{
+    width: 65%;
+    padding: 7px 5px;
+    border: 1px solid #777777;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all .3s;
+}
+
+.chang-poll .confirm-chang-pas,.cancel-chang-pas{
+    width: 70px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 4px;
+    box-shadow: #aaaaaa 3px 3px 5px;
+    margin-top: 10px;
+}
+.chang-poll .confirm-chang-pas{
+    color: white;
+    background: #4883f6;
+    margin-right: 5px;
+}
+.chang-poll .cancel-chang-pas{
+    border: 1px #eeeeee solid;
+    margin-left: 5px;
+}
+
+
+/*-------------   修改密码 弹出框  ----------------*/
+
+.login-point{
+    position: fixed;
+    top: 45%;
+    left: 45%;
+    z-index: 666;
+}
+.login-point .login-point-text{
+    background: #4883f6;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 4px;
+    display: none;
+}
+
+/*----------  登录状态提示  ---------*/
+
+.team-title{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 40px;
+    width: 100%;
+    padding: 15px 0 0 20px;
+}
+.item-detail .project-mien,.all-mein{
+    padding: 3px 15px;
+}
+.item-detail .smtitle{
+    padding: 5px 0;
+    border-bottom: #cccccc 1px solid;
+}
+.smtitle .see-all,.go-back{
+    font-size: 12px;
+    transition: all .2s;
+    cursor: pointer;
+    float: right;
+}
+.smtitle .see-all:hover{
+    color: rgba(72, 131, 246, 0.7);
+    transition: all .2s;
+}
+.smtitle  .go-back:hover{
+    color: rgba(72, 131, 246, 0.7);
+    transition: all .2s;
+}
+.item-detail .team-smtitle{
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: #4883f6 2px solid;
+    padding: 5px;
+}
+.item-detail .all-mein{
+    display: none;
+}
+
+.model-contt .party-img{
+    width: 30%;
+    float: left;
+}
+.model-contt .party-smthing{
+    width: 70%;
+    float: right;
+    font-size: 14px;
+}
+.party-smthing .party-name{
+    font-size: 16px;
+    line-height: 32px;
+}
+.party-smthing .party-text{
+    color: rgba(51, 51, 51, 0.55);
+    text-indent: 2em;
+}
+/*--------  团队风采 -------*/
+
+
+
+.staff-img{
+    width: 25%;
+    padding:0 15px 15px;
+    float: left
+}
+.staff-img>img{
+	width:100%;
+}
+.feats-img{
+    width: 70%;
+    float: left;
+    /*height: 400px;*/
+    background: #3ddcde;
+    overflow:hidden;
+}
+.project-mien{
+	overflow:hidden;
+}
+	
+.feats-img>img{
+	width:100%;
+}
+.feats-ico{
+    width: 30%;
+    float: left;
+    /*height: 400px;*/
+    padding:10px;
+}
+.feats-ico .imgarr{
+    /*height: 200px;*/
+    background: #1847ad;
+    margin:10px 0;
+}
+
+.feats-ico .imgarr>img{
+	width:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

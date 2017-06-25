@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    background: none;
+    border: none;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-family: '微软雅黑';
+}
+ul li{
+    list-style: none;
+}
+ol li{
+    list-style: none;
+}
+.clear:after{
+    content: '';
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+    zoom: 1;
+}
+a{
+    text-decoration: none;
+    color: #445;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+/*------  公共声明 ------*/
+
+.logo-head{
+    background: #0058a8;
+    color: white;
+    font-size: 18px;
+    padding: 15px 40px;
+}
+.logo-head .lock-img{
+    float: right;
+    margin-top: 7px;
+    width: 1.3%;
+    opacity: .6;
+}
+.logo-titl{
+    line-height: 40px;
+    float: left;
+    padding-left: 10px;
+}
+.logo-titl img{
+    margin-right: 15px;
+    width: 12%;
+}
+.login-box{
+    width: 100%;
+    position: relative;
+}
+.login-box img{
+    width: 100%;
+    position: relative;
+}
+.login-inlet{
+    width: 55%;
+    position: absolute;
+    z-index: 66;
+    top: 10%;
+    left: 22.5%;
+}
+.login-inlet .login-user{
+    width: 50%;
+    float: left;
+    position: relative;
+}
+.login-inlet .title{
+    font-size: 18px;
+    text-align: center;
+    line-height:45px;
+}
+.login-user{
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: rgba(80, 99, 111, 0.46) -3px -3px 7px;
+}
+.login-user .title{
+    background: white;
+    margin-bottom: 30px;
+}
+.login-user input{
+    display: block;
+    width: 80%;
+    border-radius: 5px;
+    padding: 6px 0 6px 25px;
+    border: #cccccc solid 1px;
+    margin: 10px auto;
+    font-size: 14px;
+}
+.login-user #user-name{
+    margin-bottom: 25px;
+    background: url("../../images/login/user-ico.png") no-repeat 5px center;
+}
+.login-user #user-password{
+    background: url("../../images/login/lock-icon.png") no-repeat 5px center;
+}
+.login-user .forget-password{
+    font-size: 14px;
+    color: #999999;
+    float: right;
+    margin-right: 10%;
+    margin-bottom: 20px;
+}
+.loginbar{
+    display: block;
+    width: 80%;
+    /*margin: 40px auto;*/
+    position: absolute;
+    left: 10%;
+    bottom: 30px;
+    color: white;
+    line-height: 40px;
+    background: -webkit-linear-gradient(top, #35acf6, #1480ec);
+    background: -moz-linear-gradient(top, #35acf6, #1480ec);
+    background: -ms-linear-gradient(top, #35acf6, #1480ec);
+    border-radius: 5px;
+}
+/*------- 登录框  -----*/
+
+.project-new{
+    background: rgba(255, 255, 255, 0.61);
+    box-shadow: rgba(80, 99, 111, 0.46) -3px -3px 7px;
+    overflow: hidden;
+}
+.project-new:hover{
+    overflow-y: auto;
+}
+.dynamic-cnt{
+    padding: 10px;
+}
+.dynamic-text{
+    text-indent: 2em;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 22px;
+}
+.dynamic-cnt:hover a{
+    color: #35acf6;
+    text-decoration: underline;
+    transition: all .3s;
+}
+.dynamic-cnt .subtitle{
+    margin-left: 15px;
+    color: rgba(0, 0, 0, 0.71);
+    line-height: 30px;
+}
+
+.project-new::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.project-new::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+.project-new::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}
+/*---  滚动条样式 ---*/
+
+/*---------------------  项目动态框 ------------------------*/
+
+
+
+.login-fotter{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    height: 20.3%;
+    padding-left: 31%;
+}
+.login-fotter .title{
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+.login-fotter>.phon-img{
+    height: 120%;
+    transform: translateY(-16%);
+    float: left;
+}
+.phon-downlod{
+    float: left;
+}
+.pc-downlod{
+    float: left;
+}
+.phon-downlod,.pc-downlod{
+    height: 80%;
+    padding: 10px 20px;
+}
+.phon-downlod img{
+    height: 80%;
+    margin: 10px 15px;
+}
+.pc-downlod .downlod-bar{
+    height: 70%;
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    padding: 5px 0 5px 20px;
+    border-radius: 3px;
+    position: relative;
+}
+.downlod-bar>.window-img{
+    height: 90%;
+}
+.downlod-bar>.downlod-img{
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+

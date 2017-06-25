@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    background: none;
+    border: none;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-family: '微软雅黑';
+    font-size: 14px;
+}
+ul li{
+    list-style: none;
+}
+ol li{
+    list-style: none;
+}
+.clear:after{
+    content: '';
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+    zoom: 1;
+}
+a{
+    text-decoration: none;
+    color: #445;
+}
+html,body{
+    height: 100%;
+}
+#allmap{
+    width: 100%;
+    height: 100vh;
+}
+.item-pandect{
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    box-shadow: #bbbbbb 3px 3px 5px;
+}
+.back-web,.search,.cancel-search,.search-bar{
+    float: left;
+}
+.back-web img{
+    margin: 7px;
+}
+.cancel-search img{
+    margin: 11px;
+    cursor: pointer;
+}
+.search-bar img{
+    margin: 8px;
+    cursor: pointer;
+}
+.search>input{
+    line-height: 35px;
+    background: white;
+}
+.back-web,.cancel-search,.search-bar{
+    width: 35px;
+    height: 35px;
+    background: white;
+}
+
+.search-bar{
+    background: #4883f6;
+}
+/*-----   搜索页 ----*/
+
+
+.pandect-contt{
+    background: white;
+    box-shadow: #bbbbbb 3px 3px 5px;
+    width: 260px;
+    color: rgba(102, 102, 102, 0.7);
+    padding: 10px;
+    position: absolute;
+    top: 65px;
+    left: 15px;
+    display: none;
+    overflow: hidden;
+}
+.pandect-contt p{
+    line-height: 28px;
+}
+/*---------  项目总览 -------*/
+
+
+.item-resources{
+    position: absolute;
+    top: 20px;
+    right: 150px;
+    width: 350px;
+}
+.item-resources .item-titl{
+    text-align: center;
+    box-shadow: #dddddd 2px 2px 2px;
+    line-height: 34px;
+}
+
+.item-resources .resources,.item-resources-list{
+    box-shadow: #bbbbbb 3px 3px 5px;
+    cursor: pointer;
+}
+.item-resources .resources{
+    width: 38%;
+    background: white;
+    float: left;
+}
+.item-resources .item-resources-list{
+    width: 60%;
+    background: white;
+    float: right;
+}
+.item-resources-list .item-listarr{
+    line-height: 32px;
+    display: none;
+    padding-left: 15px;
+}
+.item-resources-list .item-listarr:hover{
+    background: #4883f6;
+    color: white;
+}
+.resources .resources-category{
+    line-height: 32px;
+    display: none;
+    padding-left: 15px;
+}
+.resources .resources-category:hover{
+    background: #4883f6;
+    color: white;
+}
+
+
+/*----------  项目资源 --------*/
+
+
+.operation-prompt{
+    width: 350px;
+    border-radius: 4px;
+    background: white;
+    box-shadow: #bbbbbb 3px 3px 5px;
+    display: none;
+    overflow: hidden;
+    position: fixed;
+    left: 40%;
+    top: 30%;
+}
+
+.operation-prompt .prompt-tit{
+    text-align: center;
+    background: #4883f6;
+    color: white;
+    line-height: 50px;
+}
+.operation-prompt .prompt-text{
+    padding: 20px;
+    color: rgba(102, 102, 102, 0.7);
+}
+
+/*-----  弹出框提醒 ----*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

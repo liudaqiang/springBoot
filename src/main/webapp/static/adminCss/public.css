@@ -1,0 +1,11 @@
+@charset "utf-8";
+.hdj-head{
+	height:60px;
+	line-height:60px;
+	background:#2BC3F5;
+}
+.hdj-head h4{font-size:18px;color:#fff;letter-spacing:3px;font-weight:normal;}
+.hdj-head h4 img{
+	display:inline-block;
+	margin:10px 10px 0px 60px;
+}

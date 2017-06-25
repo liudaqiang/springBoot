@@ -1,0 +1,989 @@
+
+
+.news-contt::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.news-contt::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+.news-contt::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+/*---  滚动条样式 ---*/
+
+
+
+.dyna-details{
+	width: 100%;
+	padding: 5px 15px;
+	display: none;
+}
+.dyna-title{
+	width: 100%;
+	font-size: 18px;
+	font-weight: 900;
+	line-height: 40px;
+}
+.dyna-smtitle{
+	width: 100%;
+	border-bottom: #cccccc 1px solid;
+}
+.dyna-smtitle .text{
+	border-bottom: #4883f6 2px solid;
+	font-size: 14px;
+	padding: 0 15px;
+	font-weight: 900;
+}
+.dyna-smtitle .dyna-back{
+	float: right;
+	font-size: 12px;
+	transition: all .2s;
+	cursor: pointer;
+}
+.dyna-smtitle .dyna-back:hover{
+	color: rgba(72, 131, 246, 0.5);
+	transition: all .2s;
+}
+.dyna-contt{
+	width: 100%;
+}
+
+.dyna-contt .dyna-img{
+	width: 30%;
+	float: left;
+}
+.dyna-contt .dyna-text{
+	width: 70%;
+	float: right;
+	padding: 5px 15px;
+	text-indent: 2em;
+	font-size: 14px;
+	line-height: 22px;
+}
+.dyna-contt .contt-title{
+	font-weight: 600;
+}
+
+
+.infor {
+	width: 100%;
+	height: 100%;
+}
+
+/*.infor .item-model,.news{
+	width: 500px;
+	height: 100%;
+	padding:0 10px;
+}*/
+.infor .item-model {
+	float: left;
+}
+.infor .news {
+	float: right;
+}
+.infor .title {
+	line-height: 70px;
+	font-size: 18px;
+	font-weight: 700;
+	padding-left: 15px;
+}
+.item-model img{
+	box-shadow: #dddddd 2px 2px 2px;
+	transition: all .3s;
+	width: 100%;
+}
+.news .news-contt{
+	box-shadow: #dddddd -2px 2px 2px;
+	transition: all .3s;
+	padding: 10px;
+	width: 100%;
+}
+.news-contt .newsarr{
+	cursor: pointer;
+}
+.item-model img:hover{
+	box-shadow: #aaaaaa 3px 3px 7px;
+	transition: all .3s;
+}
+.news .news-contt:hover{
+	box-shadow: #aaaaaa -3px 3px 7px;
+	transition: all .3s;
+}
+
+.news-contt .new-title{
+	font-size: 16px;
+	font-weight: 900;
+	margin-left: 15px;
+	line-height: 38px;
+}
+.news-contt .news-text{
+	font-size: 14px;
+	line-height: 24px;
+	width: 72%;
+	float: left;
+	padding:0 5px 0 15px;
+}
+.news-contt .pic{
+	width: 28%;
+	height: 80px;
+	background: #4883f6;
+	float: right;
+	margin-top: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+
+.news-contt .pic .img{
+	width: 100%;
+	height: 100%;
+
+
+}
+
+
+
+/*-----------------  二级菜单 一样式  ------------*/
+
+
+.gantter{
+	width: 100%;
+	display: none;
+}
+
+.modal_box {
+	position: fixed;
+	left: 28%;
+	top: 14%;
+	z-index: 999;
+	width: 700px;
+	border-radius: 4px;
+	box-shadow: #bbbbbb 3px 3px 5px;
+	background-color:white;
+	display: none;
+}
+.modal_box .head {
+	border-radius: 4px 4px 0 0;
+	height: 50px;
+	color: white;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+	background-color: #4883f6;
+}
+.modal_box .tab-top {
+	width: 600px;
+	margin: 0 auto;
+	overflow: auto;
+}
+.modal_box .options {
+	height: 75px;
+}
+.modal_box .infor, .modal_box .resource{
+	float: left;
+	height: 30px;
+	width: 100px;
+	margin: 18px 0;
+	color: black;
+	font-size: 15px;
+	line-height: 30px;
+	text-align: center;
+	cursor:default;
+}
+.tab-top{
+	overflow: hidden;
+ }
+.tab-top .infor{
+	margin-right: 5px;
+	border: #4883f6 1px solid;
+}
+.tab-top .resource{
+	margin-left: 5px;
+	border: #4883f6 1px solid;
+}
+.tab-top .tab-head{
+	border-radius: 3px;
+}
+.modal_box .tab-head.active{
+	color: white;
+	background-color: #4883f6;
+}
+
+.add-resource{
+	display: none;
+}
+
+.add-informat label{
+	line-height: 28px;
+	font-size: 14px;
+	display: inline-block;
+	margin: 5px 0;
+	width: 100%;
+}
+.add-informat label input{
+	width: 70%;
+	border: #999999 1px solid;
+	border-radius: 4px;
+	padding: 4px 5px;
+}
+.add-informat .pople-name .responsible-select{
+	width: 70%;
+	border: #999999 1px solid;
+	border-radius: 4px;
+	padding: 4px 5px;
+	margin-left: 13px;
+	/*很关键：将默认的select选择框样式清除*/
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+
+	/*在选择框的最右侧中间显示小箭头图片*/
+	background: url("../images/select-ico.png") no-repeat scroll right center transparent;
+	background-size: 3%;
+}
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand { display: none; }
+
+.all-time .job-time{
+	width: 70%;
+	border: #999999 1px solid;
+	border-radius: 4px;
+	padding: 4px 5px;
+	margin-left: 13px;
+	/*很关键：将默认的select选择框样式清除*/
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+
+	/*在选择框的最右侧中间显示小箭头图片*/
+	background: url("../images/select-ico.png") no-repeat scroll right center transparent;
+	background-size: 3%;
+}
+
+
+
+/*-- 添加基本信息 ---*/
+
+
+.add-resource .new-resource{
+	width: 33.3%;
+	float: left;
+	text-align: center;
+}
+.add-resource .new-resource input{
+	border: #999999 1px solid;
+	padding: 5px;
+	width: 100%;
+}
+
+
+
+/*----- 添加资源  ------*/
+
+
+.modal_box .add-plan-btn{
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.add-plan-btn button{
+	width: 70px;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 4px;
+	box-shadow: #aaaaaa 3px 3px 5px;
+	margin-top: 10px;
+}
+.add-plan-btn .confirm-btn{
+	background: #4883f6;
+	color: white;
+	margin-left: 15px;
+}
+.add-plan-btn .cancel-btn{
+	margin-right: 15px;
+	border: 1px #eeeeee solid;
+}/**/
+/*---------  模态框 样式 -----------*/
+
+
+.add-plan{
+	position: fixed;
+	bottom: 25px;
+	right: 30px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	box-shadow: #bbbbbb 3px 3px 5px;
+	cursor: pointer;
+	background: url("../images/add-ico3.png") no-repeat center;
+}
+
+
+.items-schedule, .item_new{
+	float: left;
+	width: 100%;
+	height: 220px;
+	position: relative;
+	box-shadow: #bbbbbb 3px 3px 5px;
+}
+.add-schedule{
+	width: 200px;
+	float: left;
+	height: 220px;
+	margin: 10px 0 10px 30px;
+	position: relative;
+	border-radius: 8px 8px 0 0;
+	box-shadow: #bbbbbb 3px 3px 5px;
+}
+.add-schedule .top{
+	width: 100%;
+	height: 170px;
+	border-radius: 8px 8px 0 0;
+	overflow: hidden;
+}
+.add-schedule .top img{
+	width: 100%;
+}
+
+.items-schedule{
+	margin-top:20px;
+}
+
+.items-schedule .top {
+	width: 100%;
+	height: 170px;
+	overflow: hidden;
+	border-radius: 8px 8px 0 0;
+}
+
+.items-schedule .top img {
+	width: 100%;
+	height: 100%;
+}
+
+.items-schedule .char{
+	position: absolute;
+	color: white;
+	top: 140px;
+	width: 100%;
+	height:30px;
+	background:rgba(80,80,80,0.5);
+	line-height: 30px;
+	text-align: center;
+}
+
+.items-schedule .below {
+	height: 50px;
+	width:100%;
+	border: 1px solid #ccc;
+	padding-top:15px;
+}
+
+.items-schedule .below a{
+	display: block;
+	color: #666;
+	width: 33%;
+	text-align: center;
+	float: left;
+	font-size: 15px;
+	letter-spacing: 1px
+}
+
+
+/*----------  二级导航 2 over ---------*/
+.whole-file{
+	width: 100%;
+	position: relative;
+}
+.whole-file .manage-search{
+	width: 100%;
+	box-sizing: border-box;
+	background: #eeeeee;
+}
+.manage-search .search-bar,.add-folder-btn,.upload{
+	float: right;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	border-radius: 12px;
+	margin-right: 15px;
+	cursor: pointer;
+	transition: all .5s;
+}
+.manage-search .search-bar{
+	background: #e71409;
+	overflow: hidden;
+}
+.manage-search .search-bar .search{
+	width: 100%;
+	transition: all .5s;
+	height: 25px;
+	padding: 0 25px;
+	cursor: pointer;
+	background: url("../images/search.png") no-repeat 5px 5px;
+	z-index: 66;
+}
+
+.manage-search .screen-ico{
+	float: left;
+	padding: 4px 0 0 5px;
+}
+.manage-search .add-folder-btn{
+	background: #eeea23;
+	padding-top: 4px;
+}
+
+.manage-search .upload{
+	background: #19ee19;
+	padding-top: 4px;
+}
+.file-manage{
+	width: 100%;
+	overflow: auto;
+}
+.file-manage .file-hint{
+	width: 100%;
+	padding: 3px 20px;
+	position: relative;
+	overflow: auto;
+	border-bottom: rgba(72, 131, 246, 0.3) 1px solid;
+}
+.file-hint .file-title{
+	float: left;
+	color: #666666;
+	position: relative;
+}
+
+.file-title .return-prov{
+	margin-top: 3px;
+}
+.file-hint .file-hint-num{
+	float: right;
+	color: #cccccc;
+}
+.file-manage .file-hint p{
+	font-size: 14px;
+}
+.file-arr{
+	width: 100px;
+	padding: 10px 0;
+	text-align: center;
+	margin: 15px;
+	float: left;
+	position: relative;
+}
+.file-arr.active{
+	background: rgba(72, 131, 246, 0.29);
+}
+.file-arr .file-name{
+	line-height: 30px;
+	font-size: 14px;
+	width: 100%;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	padding: 0 3px 0 5px;
+}
+.file-newname{
+	width: 96%;
+	margin: 0 auto;
+	text-align: center;
+	background: white;
+	margin-top: 5px;
+}
+/*----  文件样式 ----*/
+
+.file-manage .rg-click{
+	width: 70px;
+	text-align: center;
+	box-shadow: #bbbbbb 3px 3px 5px;
+	position: fixed;
+	background: white;
+	display: none;
+}
+.file-manage .rg-click p{
+	line-height: 28px;
+	font-size: 14px;
+	transition: all .2s;
+	cursor: pointer;
+}
+.file-manage .rg-click p:hover{
+	background: rgba(72, 131, 246, 0.7);
+	color: white;
+	transition: all .2s;
+}
+.file-manage .rg-click p.active{
+	background: #4883f6;
+	color: white;
+}
+/*---  右击文件弹框 --*/
+
+
+.file-manage .remove-file{
+	position: fixed;
+	left: 30%;
+	top: 30%;
+	width: 500px;
+	background: white;
+	border-radius: 4px;
+	box-shadow: #bbbbbb 3px 3px 5px;
+	display: none;
+	overflow: hidden;
+}
+.file-manage .title{
+	color: white;
+	line-height: 50px;
+	background: #4883f6;
+	text-align: center;
+}
+.file-manage .remove-file .text{
+	padding: 15px 0 0 30px ;
+	font-size: 14px;
+	line-height: 40px;
+}
+.remove-file p.btn{
+	text-align: center;
+	padding-bottom: 30px;
+}
+.remove-file p.btn button{
+	width: 70px;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 4px;
+	box-shadow: #aaaaaa 3px 3px 5px;
+	margin-top: 10px;
+}
+.remove-file p.btn .confirm-btn{
+	background: #4883f6;
+	color: white;
+	margin-left: 15px;
+}
+.remove-file p.btn .cancel-btn{
+	margin-right: 15px;
+	border: 1px #eeeeee solid;
+}
+
+/*---  删除文件弹框 ---*/
+
+.screen-ico{
+	margin: 0 15px;
+	cursor: pointer;
+}
+
+
+.screen-box{
+	width: 240px;
+	position: fixed;
+	top: 24%;
+	background: white;
+	border-radius: 4px;
+	box-shadow: #bbbbbb 3px 3px 5px;
+	z-index: 666;
+	left: 16.5%;
+	display: none;
+	transition: all .3s;
+}
+.screen-box>select{
+	display: block;
+	width: 80%;
+	margin: 20px auto;
+	border-radius: 3px;
+	border: 1px solid #bbbbbb;
+	padding: 4px 8px;
+}
+.screen-btn{
+	text-align: center;
+	padding-bottom: 20px;
+}
+.screen-btn .btn{
+	border: 1px #eeeeee solid;
+	box-shadow: #dddddd 3px 3px 5px;
+}
+.screen-btn .cancel-scre{
+	color: white;
+	background: #337ab7;
+	border: none;
+	margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/*---  筛选弹框 --*/
+
+.file-manage .file-info{
+	width: 450px;
+	box-shadow: #bbbbbb 3px 3px 5px;
+	position: fixed;
+	top: 30%;
+	left: 30%;
+	background: white;
+	border-radius: 4px;
+	overflow: hidden;
+	display: none;
+}
+.file-manage .file-info label{
+	display: block;
+	text-align: center;
+	margin: 15px 0;
+	line-height: 35px;
+}
+.file-info .major span{
+	margin-right: 16px;
+}
+.file-info .major select{
+	margin-left: 12px;
+}
+.file-manage .file-info select{
+	width: 70%;
+	border: #999999 1px solid;
+	padding: 5px 15px 5px 5px;
+	border-radius: 4px;
+	overflow: hidden;
+
+	/*很关键：将默认的select选择框样式清除*/
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+
+	/*在选择框的最右侧中间显示小箭头图片*/
+	background: url("../images/select-ico.png") no-repeat scroll right center transparent;
+	background-size: 3%;
+}
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand { display: none; }
+.file-manage .file-info option{
+	text-align: center;
+	padding: 4px 0;
+	color: #777777;
+	background: none;
+}
+
+
+.file-info p.btn{
+	text-align: center;
+	padding-bottom: 30px;
+}
+.file-info p.btn button{
+	width: 70px;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 4px;
+	box-shadow: #aaaaaa 3px 3px 5px;
+	margin-top: 10px;
+}
+.file-info p.btn .confirm-btn{
+	background: #4883f6;
+	color: white;
+	margin-left: 15px;
+}
+.file-info p.btn .cancel-btn{
+	margin-right: 15px;
+	border: 1px #eeeeee solid;
+}
+/*----  上传弹框 ----*/
+
+.filearr-detail{
+	background: white;
+	color: #666666;
+	width: 0;
+	font-size: 12px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	box-shadow: #bbbbbb -3px 3px 5px;
+	padding:25px 0 15px 15px;
+	overflow: hidden;
+	transform: translateX(45px);
+}
+.close-file-deta{
+	width: 18px;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+.close-file-deta>img{
+	width: 100%;
+}
+.filearr-detail p{
+	line-height: 24px;
+}
+
+.filearr-detail .title{
+	background: none;
+	color: #666666;
+	font-size: 14px;
+	text-align: left;
+	line-height: 30px;
+}
+/*---  文件详情 --*/
+.file-suffix{
+	color: white;
+	position: absolute;
+	top: 30px;
+	left: 22px;
+	width: 57px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 900;
+	cursor: pointer;
+}
+/*-- 文件后缀名 --*/
+
+
+
+
+
+
+
+
+
+
+
+/*--  新加样式 --*/
+.add-newfolder{
+	width: 500px;
+	background: white;
+	border-radius: 4px;
+	box-shadow: #bbbbbb 3px 3px 5px;
+	overflow: hidden;
+	position: fixed;
+	top: 30%;
+	left: 30%;
+	display: none;
+	z-index: 99;
+}
+.about-newfolder{
+	width: 100%;
+	font-size: 14px;
+	color: rgba(51, 51, 51, 0.6);
+	text-align: center;
+	padding: 20px 0;
+}
+.about-newfolder span{
+	line-height: 32px;
+}
+.about-newfolder #newfolder-name{
+	border: #999999 1px solid;
+	border-radius: 4px;
+	padding: 5px;
+	width: 30%;
+}
+.addfolder-btn{
+	text-align: center;
+	padding-bottom: 30px;
+}
+.addfolder-btn button{
+	width: 70px;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 4px;
+	box-shadow: #aaaaaa 3px 3px 5px;
+	margin-top: 10px;
+}
+.addfolder-btn .confirm-new{
+	background: #4883f6;
+	color: white;
+	margin-left: 15px;
+}
+.addfolder-btn .cancel-new{
+	margin-right: 15px;
+	border: 1px #eeeeee solid;
+}
+
+
+.sort-file{
+	cursor: pointer;
+	float: right;
+}
+.sort-file>img{
+	margin: 5px 10px;
+}
+.file-hint-num .select{
+	line-height: 25px;
+	float: right;
+}
+.sort-typ{
+	font-size: 14px;
+	color: rgba(47, 47, 47, 0.67);
+	width: 160px;
+	box-shadow: #bbbbbb -3px 3px 5px;
+	text-align: center;
+	background: white;
+	position: fixed;
+	top: 220px;
+	right: 30px;
+	display: none;
+	border-radius: 4px;
+}
+.sort-typ>img{
+	position: absolute;
+	top: -20px;
+	left: 73px;
+	height: 20px;
+}
+.sort-typ p{
+	line-height: 28px;
+	cursor: pointer;
+}
+.sort-typ p:hover{
+	color: white;
+	background: #4883f6;
+}
+
+
+/*---进度管理资源添加--*/
+
+.set_plan{
+	width: 600px;
+	background: white;
+	box-shadow: #bbbbbb 3px 3px 5px;
+	position: fixed;
+	left: 30%;
+	top: 5%;
+	border-radius: 4px;
+	overflow: hidden;
+	display: none;
+}
+.set_plan input,textarea{
+	border: 1px solid #bbbbbb;
+}
+.ul_menu{
+	width: 80%;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+.ul_menu .child_menu{
+	float: left;
+	border:1px solid #bbbbbb;
+	text-align: center;
+	padding: 8px 18px;
+	border-radius: 5px;
+}
+.child_menu.active{
+	background: #4883f6;
+	color: white;
+	border: #4883f6 1px solid;
+}
+.child_menu.active a{
+	color: white;
+}
+/*------  以上是头部菜单栏样式 ------*/
+
+
+.plan_container{
+	width: 100%;
+	padding: 0 15px;
+	text-align: center;
+}
+.basic_info .info{
+	padding: 10px 0;
+}
+.basic_info .info input{
+	padding: 4px;
+	border-radius: 3px;
+	width:50%;
+}
+
+/*--  按钮样式 --*/
+.contt_footer{
+	padding: 20px 0;
+	width: 100%;
+	text-align: center;
+}
+.contt_footer button{
+	width: 70px;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 4px;
+	box-shadow: #aaaaaa 3px 3px 5px;
+}
+.contt_footer .footerbar{
+	width: 100%;
+}
+.contt_footer .confirm-btn{
+	background: #4883f6;
+	color: white;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.contt_footer .del-btn{
+	margin-right: 10px;
+	border: #eeeeee;
+	cursor: pointer;
+}
+
+/*----  基本信息样式 ----*/
+
+.basic_info .resource{
+	width: 100%;
+	padding: 0 30px;
+}
+
+.article-name,.article-number,.article-unit{
+	width: 33.3%;
+	float: left;
+}
+
+.article-name input{
+	width: 100%;
+	padding: 4px 5px;
+}
+.article-number input{
+	width: 100%;
+	padding: 4px 5px;
+}
+.article-unit input{
+	width: 100%;
+	padding: 4px 5px;
+}
+.resource .reso-titl{
+	text-align: center;
+	line-height: 40px;
+}
+
+/*--  按钮 -*/
+.contt_footer{
+	padding: 20px 0;
+	width: 100%;
+	text-align: center;
+}
+.contt_footer button{
+	width: 70px;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 4px;
+	box-shadow: #aaaaaa 3px 3px 5px;
+}
+.contt_footer .item-reso{
+	width: 100%;
+}
+.contt_footer .save-reso{
+	background: #4883f6;
+	color: white;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.contt_footer .empty-reso{
+	margin-right: 10px;
+	border: #eeeeee;
+	cursor: pointer;
+}
+
+/*----------   资源添加  -------------*/
+
